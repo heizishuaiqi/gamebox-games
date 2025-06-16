@@ -751,6 +751,10 @@ img {
     color: var(--secondary-color);
 }
 
+.footer-update .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
 /* 响应式设计优化 */
 @media (max-width: 768px) {
     .hero-section {
