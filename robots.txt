@@ -1,0 +1,77 @@
+User-agent: *
+Allow: /
+
+# 主要页面
+Allow: /index.html
+Allow: /about.html
+
+# 游戏页面
+Allow: /games/
+Allow: /games/epic-basketball.html
+Allow: /games/thief-puzzle.html
+Allow: /games/ultimate-moto.html
+Allow: /games/kick-the-pirate.html
+
+# 静态资源
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# 禁止访问的路径
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.log$
+Disallow: /*.tmp$
+
+# 网站地图位置
+Sitemap: https://gamebox.games/sitemap.xml
+
+# 爬取延迟（可选，对于大型网站）
+# Crawl-delay: 1
+
+# 针对特定搜索引擎的规则
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# 百度
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+# 搜狗
+User-agent: Sogou web spider
+Allow: /
+Crawl-delay: 1
+
+# 360搜索
+User-agent: 360Spider
+Allow: /
+Crawl-delay: 1
+
+# 禁止一些常见的垃圾爬虫
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# 说明：
+# 此文件指导搜索引擎如何抓取免费游戏站
+# 允许所有主要搜索引擎访问游戏内容和页面
+# 禁止访问管理后台和私有目录
+# 设置适当的爬取延迟以避免服务器过载 

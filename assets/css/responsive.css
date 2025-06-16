@@ -1,0 +1,543 @@
+/* ==========================================================================
+   免费游戏站 - 响应式样式文件
+   ========================================================================== */
+
+/* ==========================================================================
+   超小屏幕 (手机竖屏, < 576px)
+   ========================================================================== */
+
+@media (max-width: 575.98px) {
+    /* 基础调整 */
+    body {
+        padding-top: 70px;
+    }
+    
+    /* 导航栏 */
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .navbar-brand img {
+        height: 32px !important;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem !important;
+        font-size: 0.95rem;
+    }
+    
+    /* Hero区域 */
+    .hero-section {
+        padding: 2rem 0 !important;
+    }
+    
+    .hero-section .display-4 {
+        font-size: 1.75rem !important;
+    }
+    
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+    
+    .hero-image {
+        font-size: 2.5rem !important;
+        margin-top: 1rem;
+    }
+    
+    /* 游戏卡片 */
+    .game-card__image {
+        height: 180px !important;
+    }
+    
+    .game-card__title {
+        font-size: 1.1rem;
+    }
+    
+    .game-card__description {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
+    .game-card__play-btn {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    /* 游戏页面 */
+    .game-title-section {
+        padding: 1.5rem 0 !important;
+    }
+    
+    .game-title-section .display-5 {
+        font-size: 1.5rem !important;
+    }
+    
+    .game-title-section .lead {
+        font-size: 0.95rem;
+    }
+    
+    .game-icon-large {
+        font-size: 3rem !important;
+    }
+    
+    /* 游戏iframe */
+    .game-container {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .game-iframe {
+        height: 300px !important;
+    }
+    
+    .game-loading {
+        padding: 1.5rem;
+    }
+    
+    .game-loading .spinner-border {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+    
+    .game-controls {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .game-controls .btn {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    /* 特色介绍区 */
+    .feature-icon {
+        font-size: 2.5rem !important;
+    }
+    
+    .features-section h5 {
+        font-size: 1.1rem;
+    }
+    
+    .features-section p {
+        font-size: 0.85rem;
+    }
+    
+    /* 卡片组件 */
+    .card-header {
+        padding: 0.75rem 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    /* 面包屑 */
+    .breadcrumb {
+        font-size: 0.85rem;
+    }
+    
+    /* 标题调整 */
+    .display-6 {
+        font-size: 1.5rem !important;
+    }
+    
+    h1 { font-size: 1.75rem !important; }
+    h2 { font-size: 1.5rem !important; }
+    h3 { font-size: 1.25rem !important; }
+    h4 { font-size: 1.1rem !important; }
+    h5 { font-size: 1rem !important; }
+    
+    /* 间距调整 */
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+    
+    /* 容器调整 */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* ==========================================================================
+   小屏幕 (手机横屏, ≥576px and < 768px)
+   ========================================================================== */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* 导航栏 */
+    .navbar-brand img {
+        height: 36px !important;
+    }
+    
+    /* Hero区域 */
+    .hero-section .display-4 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-image {
+        font-size: 3rem !important;
+    }
+    
+    /* 游戏卡片 */
+    .game-card__image {
+        height: 200px !important;
+    }
+    
+    /* 游戏页面 */
+    .game-title-section .display-5 {
+        font-size: 1.75rem !important;
+    }
+    
+    .game-icon-large {
+        font-size: 4rem !important;
+    }
+    
+    /* 游戏iframe */
+    .game-iframe {
+        height: 350px !important;
+    }
+    
+    /* 特色介绍区 */
+    .feature-icon {
+        font-size: 2.75rem !important;
+    }
+}
+
+/* ==========================================================================
+   中等屏幕 (平板, ≥768px and < 992px)
+   ========================================================================== */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* 游戏卡片 */
+    .game-card__image {
+        height: 210px !important;
+    }
+    
+    /* 游戏iframe */
+    .game-iframe {
+        height: 450px !important;
+    }
+    
+    /* 游戏控制按钮 */
+    .game-controls {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* 游戏页面侧边栏 */
+    .sticky-top {
+        top: 90px !important;
+    }
+    
+    /* 特色介绍区 */
+    .features-section .col-md-6 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* ==========================================================================
+   大屏幕 (桌面端, ≥992px and < 1200px)
+   ========================================================================== */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* 游戏卡片 */
+    .game-card__image {
+        height: 220px !important;
+    }
+    
+    /* 游戏iframe */
+    .game-iframe {
+        height: 600px !important;
+    }
+}
+
+/* ==========================================================================
+   超大屏幕 (大桌面端, ≥1200px)
+   ========================================================================== */
+
+@media (min-width: 1200px) {
+    /* 容器最大宽度 */
+    .container {
+        max-width: 1140px;
+    }
+    
+    /* 游戏卡片 */
+    .game-card__image {
+        height: 240px !important;
+    }
+    
+    /* 游戏iframe */
+    .game-iframe {
+        height: 600px !important;
+    }
+    
+    /* Hero区域 */
+    .hero-section .display-4 {
+        font-size: 2.5rem !important;
+    }
+    
+    .hero-image {
+        font-size: 4.5rem !important;
+    }
+}
+
+/* ==========================================================================
+   超超大屏幕 (4K屏幕, ≥1400px)
+   ========================================================================== */
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    /* 游戏iframe */
+    .game-iframe {
+        height: 700px !important;
+    }
+    
+    /* 游戏卡片 */
+    .game-card__image {
+        height: 260px !important;
+    }
+}
+
+/* ==========================================================================
+   横屏移动设备特殊处理
+   ========================================================================== */
+
+@media (max-width: 991.98px) and (orientation: landscape) {
+    /* 减少垂直间距 */
+    .hero-section {
+        padding: 1.5rem 0 !important;
+    }
+    
+    .py-5 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    
+    /* 游戏iframe适配 */
+    .game-iframe {
+        height: 60vh !important;
+        min-height: 300px;
+    }
+    
+    /* 导航栏高度调整 */
+    body {
+        padding-top: 60px;
+    }
+    
+    .navbar {
+        min-height: auto;
+    }
+}
+
+/* ==========================================================================
+   触摸设备优化
+   ========================================================================== */
+
+@media (hover: none) and (pointer: coarse) {
+    /* 移除悬停效果，使用点击效果 */
+    .game-card__container:hover {
+        transform: none;
+        box-shadow: var(--shadow-sm) !important;
+    }
+    
+    .game-card__container:active {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg) !important;
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+    
+    .btn:active {
+        transform: translateY(-1px);
+    }
+    
+    /* 增大点击区域 */
+    .game-controls .btn {
+        padding: 0.75rem 1.5rem;
+        min-height: 44px;
+    }
+    
+    .navbar-nav .nav-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+    
+    /* 移除导航栏下划线动画 */
+    .navbar-nav .nav-link::after {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+   打印样式优化
+   ========================================================================== */
+
+@media print {
+    /* 隐藏不必要元素 */
+    .navbar,
+    .breadcrumb-section,
+    .game-controls,
+    .btn,
+    .hero-section,
+    .features-section,
+    .related-games-section,
+    footer {
+        display: none !important;
+    }
+    
+    /* 调整布局 */
+    body {
+        padding-top: 0;
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .container {
+        max-width: none !important;
+        padding: 0;
+    }
+    
+    /* 游戏信息区域 */
+    .game-info-section {
+        padding: 0 !important;
+    }
+    
+    .game-title-section {
+        padding: 1rem 0 !important;
+        background: #f8f9fa !important;
+        color: #000 !important;
+    }
+    
+    /* 游戏iframe替换为提示信息 */
+    .game-container::after {
+        content: "请访问网站在线游玩游戏";
+        display: block;
+        text-align: center;
+        padding: 2rem;
+        background: #f8f9fa;
+        border: 2px dashed #ccc;
+        font-weight: bold;
+    }
+    
+    .game-iframe-wrapper {
+        display: none;
+    }
+    
+    /* 卡片样式简化 */
+    .card {
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+    }
+    
+    /* 标题样式 */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        color: #000 !important;
+    }
+    
+    /* 链接显示URL */
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+
+/* ==========================================================================
+   高分辨率屏幕优化 (Retina屏幕)
+   ========================================================================== */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* 提高文字清晰度 */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* 细化边框 */
+    .card {
+        border-width: 0.5px;
+    }
+    
+    .breadcrumb-section {
+        border-bottom-width: 0.5px;
+    }
+}
+
+/* ==========================================================================
+   暗黑模式适配 (预留)
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+    /* 暂时保留空白，可在后期添加暗黑模式支持 */
+    /* 
+    :root {
+        --primary-color: #4dabf7;
+        --dark-color: #ffffff;
+        --light-color: #1a1a1a;
+        --secondary-color: #adb5bd;
+    }
+    
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+    */
+}
+
+/* ==========================================================================
+   可访问性增强
+   ========================================================================== */
+
+/* 焦点可见性增强 */
+@media (prefers-reduced-motion: no-preference) {
+    *:focus {
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
+    }
+}
+
+/* 高对比度模式 */
+@media (prefers-contrast: high) {
+    .game-card__container {
+        border: 2px solid var(--dark-color) !important;
+    }
+    
+    .btn {
+        border: 2px solid currentColor !important;
+    }
+    
+    .navbar {
+        border-bottom: 2px solid var(--dark-color);
+    }
+}
+
+/* 减少动画效果 */
+@media (prefers-reduced-motion: reduce) {
+    .hero-image,
+    .game-icon-large {
+        animation: none !important;
+    }
+    
+    .game-title-section::before {
+        animation: none !important;
+    }
+    
+    .game-card {
+        transition: none !important;
+    }
+} 

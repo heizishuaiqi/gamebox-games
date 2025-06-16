@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Epic Basketball - Free 60-Second Basketball Challenge | GameBox Hub</title>
+    <meta name="description" content="Play Epic Basketball free online! Master the 60-second basketball challenge with dynamic hoops and multiple characters. Instant browser gaming, no download needed!">
+    <meta name="keywords" content="epic basketball,free basketball game,60 second challenge,online basketball,shooting game,sports game,browser game,instant play">
+    <meta name="author" content="GameBox Hub">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://gamebox.games/games/epic-basketball.html">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Epic Basketball - Free Online Basketball Game">
+    <meta property="og:description" content="Epic Basketball free online basketball game! Experience real shooting challenges and test your basketball skills.">
+    <meta property="og:type" content="game">
+    <meta property="og:url" content="https://gamebox.games/games/epic-basketball.html">
+    <meta property="og:image" content="https://gamebox.games/assets/images/thumbnails/epic-basketball-thumb.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/assets/images/icons/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css?v=2024010114" rel="stylesheet">
+    <link href="/assets/css/responsive.css?v=2024010101" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Game",
+        "name": "Epic Basketball",
+        "description": "Experience the ultimate basketball shooting challenge! Realistic physics engine and exciting gameplay, test your shooting skills and aim for the highest score.",
+        "genre": "Sports Game",
+        "url": "https://gamebox.games/games/epic-basketball.html",
+        "image": "https://gamebox.games/assets/images/thumbnails/epic-basketball-thumb.jpg",
+        "publisher": {
+            "@type": "Organization",
+            "name": "GameBox Hub"
+        },
+        "gamePlatform": "Web Browser",
+        "applicationCategory": "Game"
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <div class="brand-icon me-2">🎮</div>
+                <span class="brand-text">GameBox Hub</span>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="/about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="breadcrumb-section bg-light py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Epic Basketball</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Game Title Section -->
+    <section class="game-title-section py-4 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold mb-2">Epic Basketball</h1>
+                    <p class="lead mb-3">🏀 Ultimate Basketball Game - Experience the ultimate basketball shooting challenge</p>
+                    <div class="game-tags">
+                        <span class="badge bg-dark text-light me-2">Sports Game</span>
+                        <span class="badge bg-dark text-light me-2">Basketball</span>
+                        <span class="badge bg-dark text-light me-2">Free Game</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="game-icon-large">
+                        🏀
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Play Section -->
+    <section id="game-play" class="game-play-section py-5">
+        <div class="container">
+            <div class="game-container">
+                <div class="game-iframe-wrapper">
+                    <div class="game-loading" id="gameLoading">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Game loading...</span>
+                        </div>
+                        <p class="mt-2">Game loading, please wait...</p>
+                    </div>
+                    
+                    <iframe 
+                        id="gameFrame"
+                        src="https://cloud.onlinegames.io/games/2024/shareddreams/epic-basketball/index.html"
+                        class="game-iframe"
+                        allowfullscreen
+                        allow="gamepad; microphone; camera"
+                        sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                        title="Epic Basketball Game">
+                    </iframe>
+                    
+                    <div class="game-controls">
+                        <button class="btn btn-outline-primary btn-sm" onclick="toggleFullscreen()" id="fullscreenBtn">
+                            📺 Fullscreen
+                        </button>
+                        <button class="btn btn-outline-secondary btn-sm" onclick="reloadGame()">
+                            🔄 Reload
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Information Section -->
+    <section class="game-info-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Game Description -->
+                    <h2 class="h4 mb-3">🎯 About This Game</h2>
+                    <p class="mb-4">Play the ultimate 60-second basketball challenge directly in your web browser! Epic Basketball combines arcade-style shooting with dynamic gameplay that keeps you on your toes. Test your shooting skills in this addictive street basketball simulator where precision and speed determine your success.</p>
+                    <p class="mb-4">With only one minute on the clock, every shot counts as you face an ever-changing hoop that refuses to stay put. The challenge intensifies as successful shots trigger hoop repositioning - sometimes moving the target further away or higher up.</p>
+
+                    <!-- Game Features -->
+                    <h3 class="h5 mb-3">✨ Key Features</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">⏱️ <strong>Time-Limited Challenge</strong> - 60-second rounds that demand quick reflexes and accurate aim</li>
+                        <li class="mb-2">🎯 <strong>Dynamic Hoop Movement</strong> - The basket relocates after each successful shot, increasing difficulty</li>
+                        <li class="mb-2">👤 <strong>Multiple Characters</strong> - Unlock unique street ballers with distinct personalities</li>
+                        <li class="mb-2">⭐ <strong>Bonus Time System</strong> - Special mini-hoops appear to extend your playing time</li>
+                        <li class="mb-2">🏀 <strong>Realistic Physics</strong> - Authentic basketball shooting mechanics and ball physics</li>
+                        <li class="mb-2">🎮 <strong>Instant Play</strong> - No download required, play directly in your browser</li>
+                    </ul>
+
+                    <!-- Character Roster -->
+                    <h3 class="h5 mb-3">👤 Character Roster</h3>
+                    <p class="mb-4"><strong>Starting Player:</strong> Begin your journey with <strong>Javi</strong>, an energetic street player with distinctive style. <strong>Unlockable Characters</strong> include Plin Plin, Bubu, Patty Wally, Bruce, Alien, Neil, and Imhotep - each with unique personalities and flair.</p>
+                    
+                    <div class="alert alert-warning">
+                        <h4 class="alert-heading">🏆 Ultimate Challenge: Nona</h4>
+                        <p class="mb-0">The crown jewel of Epic Basketball's character collection! Despite her grandmother appearance, <strong>Nona represents the pinnacle of basketball excellence</strong>. Unlocking this legendary player requires achieving a <strong>300-point milestone</strong> - a feat that demands serious skill development and consistent practice.</p>
+                    </div>
+
+                    <!-- Controls Guide -->
+                    <h3 class="h5 mb-3">🕹️ Game Controls</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="h6 mb-3">🖱️ Desktop Controls</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">🎯 <strong>Mouse Drag</strong> - Press and hold left button, drag to set shooting angle</li>
+                                <li class="mb-2">🚀 <strong>Release to Shoot</strong> - Release mouse button to launch basketball</li>
+                                <li class="mb-2">⏱️ <strong>Quick Shots</strong> - Fast aiming for time-limited gameplay</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="h6 mb-3">📱 Mobile Controls</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">👆 <strong>Touch & Drag</strong> - Touch screen and drag to adjust angle</li>
+                                <li class="mb-2">🏆 <strong>Score Points</strong> - Sink baskets before 60-second timer expires</li>
+                                <li class="mb-2">🎯 <strong>Trajectory Guide</strong> - Use dotted line to plan optimal shots</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Game Tips -->
+                    <div class="alert alert-info">
+                        <h4 class="alert-heading">💡 Tips for Success</h4>
+                        <p class="mb-0"><strong>Practice shot timing</strong> to develop muscle memory and pay attention to hoop movement patterns. <strong>Prioritize bonus time opportunities</strong> when mini-hoops appear to extend your playing time. <strong>Utilize the dotted trajectory guide</strong> to plan optimal shots and adapt your shooting technique as hoop positioning changes.</p>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 100px;">
+                        <!-- Game Statistics -->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">📊 Game Info</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Game Type:</span>
+                                    <strong>Sports Arcade</strong>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Duration:</span>
+                                    <strong>60 Seconds</strong>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Players:</span>
+                                    <strong>Single Player</strong>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Difficulty:</span>
+                                    <strong>Progressive</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Game Skills -->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">🎯 Target Skills</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="skill-item mb-2">
+                                    <span>Shooting Accuracy</span>
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar bg-success" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item mb-2">
+                                    <span>Quick Reflexes</span>
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar bg-info" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item mb-2">
+                                    <span>Time Management</span>
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar bg-primary" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Adaptability</span>
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar bg-warning" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Actions -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">🏀 Character System</h5>
+                            </div>
+                            <div class="card-body text-center">
+                                <p class="text-muted mb-3">Unlock 8 unique basketball players!</p>
+                                <div class="d-grid gap-2">
+                                    <a href="#game-play" class="btn btn-outline-primary btn-sm">
+                                        🎮 Back to Game
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Games Recommendations -->
+    <section class="related-games-modern">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-badge">
+                    <span class="badge-icon">🎮</span>
+                    <span class="badge-text">More Exciting</span>
+                </div>
+                <h2 class="section-title-large">Recommended Games</h2>
+                <p class="section-description">Discover more interesting games and continue your gaming journey</p>
+            </div>
+            
+            <div class="related-games-grid">
+                <!-- Thief Puzzle -->
+                <div class="related-game-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="related-game-inner" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/images/thumbnails/thief-puzzle-thumb.jpg'); background-size: cover; background-position: center;">
+                        <div class="related-game-header puzzle-theme">
+                            <div class="related-game-icon">🧩</div>
+                            <div class="related-game-category">Puzzle</div>
+                        </div>
+                        <div class="related-game-body">
+                            <h3 class="related-game-title" style="color: white;">Thief Puzzle</h3>
+                            <p class="related-game-description" style="color: rgba(255,255,255,0.9);">Challenge your wisdom and help the thief complete various puzzle tasks.</p>
+                        </div>
+                        <div class="related-game-footer">
+                            <a href="/games/thief-puzzle.html" class="related-game-btn">
+                                <span class="btn-icon">🧩</span>
+                                <span class="btn-text">Play Now</span>
+                                <span class="btn-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ultimate Moto -->
+                <div class="related-game-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="related-game-inner" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/images/thumbnails/ultimate-moto-thumb.jpg'); background-size: cover; background-position: center;">
+                        <div class="related-game-header racing-theme">
+                            <div class="related-game-icon">🏎️</div>
+                            <div class="related-game-category">Racing</div>
+                        </div>
+                        <div class="related-game-body">
+                            <h3 class="related-game-title" style="color: white;">Ultimate Moto</h3>
+                            <p class="related-game-description" style="color: rgba(255,255,255,0.9);">Experience high-speed motorcycle racing and challenge various tracks.</p>
+                        </div>
+                        <div class="related-game-footer">
+                            <a href="/games/ultimate-moto.html" class="related-game-btn">
+                                <span class="btn-icon">🏎️</span>
+                                <span class="btn-text">Play Now</span>
+                                <span class="btn-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kick the Pirate -->
+                <div class="related-game-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="related-game-inner" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/images/thumbnails/kick-the-pirate-thumb.jpg'); background-size: cover; background-position: center;">
+                        <div class="related-game-header action-theme">
+                            <div class="related-game-icon">⚔️</div>
+                            <div class="related-game-category">Action</div>
+                        </div>
+                        <div class="related-game-body">
+                            <h3 class="related-game-title" style="color: white;">Kick the Pirate</h3>
+                            <p class="related-game-description" style="color: rgba(255,255,255,0.9);">Join epic pirate battles and showcase your combat skills.</p>
+                        </div>
+                        <div class="related-game-footer">
+                            <a href="/games/kick-the-pirate.html" class="related-game-btn">
+                                <span class="btn-icon">⚔️</span>
+                                <span class="btn-text">Play Now</span>
+                                <span class="btn-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="footer-brand mb-3">
+                        <div class="brand-icon me-2">🎮</div>
+                        <span class="brand-text h5 mb-0">GameBox Hub</span>
+                    </div>
+                    <p class="footer-description text-muted mb-3">
+                        Providing high-quality free online gaming experiences for players worldwide, no download required - click and play instantly.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <h6 class="footer-title">Game Categories</h6>
+                            <ul class="footer-links">
+                                <li><a href="/games/epic-basketball.html">Sports Games</a></li>
+                                <li><a href="/games/thief-puzzle.html">Puzzle Games</a></li>
+                                <li><a href="/games/ultimate-moto.html">Racing Games</a></li>
+                                <li><a href="/games/kick-the-pirate.html">Action Games</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h6 class="footer-title">About Us</h6>
+                            <ul class="footer-links">
+                                <li><a href="/about.html">About Us</a></li>
+                                <li><a href="mailto:contact@gamebox.games">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="footer-copyright mb-0">
+                        &copy; 2024 GameBox Hub. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <p class="footer-update mb-0">
+                        <small class="text-muted">Last updated: January 1, 2024</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js?v=2024010102"></script>
+    <script src="/assets/js/game-loader.js?v=2024010102"></script>
+
+</body>
+</html> 

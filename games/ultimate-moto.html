@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Ultimate Moto - Free High-Speed Motorcycle Racing Game | GameBox Hub</title>
+    <meta name="description" content="Play Ultimate Moto free online! Experience thrilling high-speed motorcycle racing with neon graphics, stunt mechanics and diamond collection. Instant arcade fun!">
+    <meta name="keywords" content="ultimate moto,free racing game,motorcycle racing,high speed racing,arcade racing,neon graphics,stunt mechanics,instant play">
+    <meta name="author" content="GameBox Hub">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://gamebox.games/games/ultimate-moto.html">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Ultimate Moto - Free Online Motorcycle Racing Game">
+    <meta property="og:description" content="Ultimate Moto free online motorcycle racing game! Experience the thrill of high-speed driving, challenge various tracks.">
+    <meta property="og:type" content="game">
+    <meta property="og:url" content="https://gamebox.games/games/ultimate-moto.html">
+    <meta property="og:image" content="https://gamebox.games/assets/images/thumbnails/ultimate-moto-thumb.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/assets/images/icons/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css?v=2024010102" rel="stylesheet">
+    <link href="/assets/css/responsive.css?v=2024010102" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Game",
+        "name": "Ultimate Moto",
+        "description": "Get ready to experience ultimate motorcycle racing! Realistic physics engine and challenging tracks, showcase your driving skills.",
+        "genre": "Racing Game",
+        "url": "https://gamebox.games/games/ultimate-moto.html",
+        "image": "https://gamebox.games/assets/images/thumbnails/ultimate-moto-thumb.jpg",
+        "publisher": {
+            "@type": "Organization",
+            "name": "GameBox Hub"
+        },
+        "gamePlatform": "Web Browser",
+        "applicationCategory": "Game"
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/assets/images/logo/logo.svg" alt="Free Games HubLogo" height="40" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                <span style="display: none; font-weight: bold; color: #007bff;">🎮 GameBox Hub</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="breadcrumb-section bg-light py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Ultimate Moto</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Game Title Section -->
+    <section class="game-title-section py-4 bg-warning text-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold mb-2">Ultimate Moto</h1>
+                    <p class="lead mb-3">🏎️ Ultimate Motorcycle Game - Experience High-Speed Driving Thrills</p>
+                    <div class="game-tags">
+                        <span class="badge bg-dark text-light me-2">Racing Game</span>
+                        <span class="badge bg-dark text-light me-2">Speed Racing</span>
+                        <span class="badge bg-dark text-light me-2">Free Game</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="game-icon-large">
+                        🏎️
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Play Section -->
+    <section class="game-play-section py-5">
+        <div class="container">
+            <div class="game-container">
+                <div class="game-iframe-wrapper">
+                    <div class="game-loading" id="gameLoading">
+                        <div class="spinner-border text-warning" role="status">
+                            <span class="visually-hidden">Game loading...</span>
+                        </div>
+                        <p class="mt-2">Game loading, please wait...</p>
+                    </div>
+                    
+                    <iframe 
+                        id="gameFrame"
+                        src="https://cloud.onlinegames.io/games/2021/2/ultimate-moto/index-og.html"
+                        class="game-iframe"
+                        allowfullscreen
+                        allow="gamepad; microphone; camera"
+                        sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                        title="Ultimate Moto Game">
+                    </iframe>
+                    
+                    <div class="game-controls">
+                        <button class="btn btn-outline-warning btn-sm" onclick="toggleFullscreen()" id="fullscreenBtn">
+                            📺 Fullscreen
+                        </button>
+                        <button class="btn btn-outline-secondary btn-sm" onclick="reloadGame()">
+                            🔄 Reload
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Information Section -->
+    <section class="game-info-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Game Description -->
+                    <h2 class="h4 mb-3">🎯 About This Game</h2>
+                    <p class="mb-4">Escape the complexity of modern gaming with this refreshingly simple motorcycle racing experience. Ultimate Moto delivers pure arcade fun through clean neon aesthetics, intuitive controls, and addictive gameplay that prioritizes entertainment over overwhelming features.</p>
+                    <p class="mb-4">In an era of overly complicated gaming experiences, Ultimate Moto embraces the timeless appeal of classic arcade mechanics. Like the legendary simplicity of Pac-Man, this game proves that engaging gameplay doesn't require elaborate packaging.</p>
+
+                    <!-- Game Features -->
+                    <h3 class="h5 mb-3">✨ Key Features</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">⚡ <strong>Instant Accessibility</strong> - Jump directly into racing action without lengthy tutorials</li>
+                        <li class="mb-2">🌈 <strong>Neon Visual Style</strong> - Clean, minimalist graphics with vibrant glowing effects</li>
+                        <li class="mb-2">🎯 <strong>Progressive Difficulty</strong> - Increasingly challenging obstacle courses and track designs</li>
+                        <li class="mb-2">💎 <strong>Diamond Collection System</strong> - Gather gems to unlock bikes and performance upgrades</li>
+                        <li class="mb-2">🎪 <strong>Flip Mechanics</strong> - Perform aerial stunts for bonus rewards and style points</li>
+                        <li class="mb-2">🔄 <strong>Quick Restart Function</strong> - Immediate level retry without frustrating loading times</li>
+                    </ul>
+
+                    <!-- Controls Guide -->
+                    <h3 class="h5 mb-3">🕹️ Game Controls</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="h6 mb-3">🖱️ Movement Controls</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">⬆️ <strong>WASD Keys</strong> - Alternative movement control scheme</li>
+                                <li class="mb-2">🎯 <strong>Arrow Keys</strong> - Traditional directional navigation</li>
+                                <li class="mb-2">🏍️ <strong>Physics-based handling</strong> - Realistic motorcycle dynamics</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="h6 mb-3">🎮 Core Mechanics</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">🎯 <strong>Navigate tracks</strong> - Maintain balance and avoid crashes</li>
+                                <li class="mb-2">💎 <strong>Collect diamonds</strong> - Gather gems for upgrades</li>
+                                <li class="mb-2">🎪 <strong>Perform flips</strong> - Execute aerial stunts for bonuses</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Gaming Relief Benefits -->
+                    <h3 class="h5 mb-3">🧘 Gaming Relief Benefits</h3>
+                    <div class="alert alert-info">
+                        <h4 class="alert-heading">🎯 Stress-Free Experience</h4>
+                        <p class="mb-0">Ultimate Moto provides therapeutic gaming sessions free from competitive pressure, complex storylines, or overwhelming feature sets. <strong>Focus purely on enjoyable motorcycle racing</strong> without external distractions. Perfect for brief gaming breaks or extended play sessions, helping clear mental clutter through simple, satisfying gameplay mechanics.</p>
+                    </div>
+                    
+                    <!-- Track Design Elements -->
+                    <h3 class="h5 mb-3">🛣️ Track Design Elements</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">🌀 <strong>Curved loops</strong> - Test momentum management</li>
+                                <li class="mb-2">🚀 <strong>Launch ramps</strong> - Require speed calculation</li>
+                                <li class="mb-2">⛰️ <strong>Steep inclines</strong> - Challenge engine power</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">🎯 <strong>Precision landing zones</strong> - Demand accuracy</li>
+                                <li class="mb-2">🌈 <strong>Glowing neon landscapes</strong> - Visual appeal</li>
+                                <li class="mb-2">🏍️ <strong>Clean visual design</strong> - Focus on racing mechanics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 100px;">
+                        <!-- Game Statistics -->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">📊 Game Info</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Game Type:</span>
+                                    <strong>Neon Racing</strong>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Design:</span>
+                                    <strong>Minimalist</strong>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Target:</span>
+                                    <strong>Stress Relief</strong>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Session:</span>
+                                    <strong>Quick/Extended</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Game Skills -->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">🎯 Target Audience</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="skill-item mb-2">
+                                    <span>Casual Gaming Enthusiasts</span>
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar bg-success" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item mb-2">
+                                    <span>Arcade Game Nostalgia</span>
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar bg-info" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item mb-2">
+                                    <span>Stress Relief Seekers</span>
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar bg-primary" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span>Mental Clarity</span>
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar bg-warning" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Share Game -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">💎 Progression System</h5>
+                            </div>
+                            <div class="card-body text-center">
+                                <p class="text-muted mb-3">Strategic diamond spending for bike upgrades!</p>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-info btn-sm" style="font-size: 0.8rem;">
+                                        🏍️ Bike Customization
+                                    </button>
+                                    <button class="btn btn-outline-success btn-sm" style="font-size: 0.8rem;">
+                                        ⚡ Engine Enhancement
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Games Recommendations -->
+    <section class="related-games-modern">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-badge">
+                    <span class="badge-icon">🎮</span>
+                    <span class="badge-text">More Exciting</span>
+                </div>
+                <h2 class="section-title-large">Recommended Games</h2>
+                <p class="section-description">Discover more interesting games and continue your gaming journey</p>
+            </div>
+            
+            <div class="related-games-grid">
+                <!-- Epic Basketball -->
+                <div class="related-game-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="related-game-inner" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/images/thumbnails/epic-basketball-thumb.jpg'); background-size: cover; background-position: center;">
+                        <div class="related-game-header basketball-theme">
+                            <div class="related-game-icon">🏀</div>
+                            <div class="related-game-category">Sports</div>
+                        </div>
+                        <div class="related-game-body">
+                            <h3 class="related-game-title" style="color: white;">Epic Basketball</h3>
+                            <p class="related-game-description" style="color: rgba(255,255,255,0.9);">Experience real basketball shooting challenges and test your shooting skills.</p>
+                        </div>
+                        <div class="related-game-footer">
+                            <a href="/games/epic-basketball.html" class="related-game-btn">
+                                <span class="btn-icon">🏀</span>
+                                <span class="btn-text">Play Now</span>
+                                <span class="btn-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thief Puzzle -->
+                <div class="related-game-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="related-game-inner" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/images/thumbnails/thief-puzzle-thumb.jpg'); background-size: cover; background-position: center;">
+                        <div class="related-game-header puzzle-theme">
+                            <div class="related-game-icon">🧩</div>
+                            <div class="related-game-category">Puzzle</div>
+                        </div>
+                        <div class="related-game-body">
+                            <h3 class="related-game-title" style="color: white;">Thief Puzzle</h3>
+                            <p class="related-game-description" style="color: rgba(255,255,255,0.9);">Challenge your wisdom and help the thief complete various puzzle tasks.</p>
+                        </div>
+                        <div class="related-game-footer">
+                            <a href="/games/thief-puzzle.html" class="related-game-btn">
+                                <span class="btn-icon">🧩</span>
+                                <span class="btn-text">Play Now</span>
+                                <span class="btn-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kick the Pirate -->
+                <div class="related-game-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="related-game-inner" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/images/thumbnails/kick-the-pirate-thumb.jpg'); background-size: cover; background-position: center;">
+                        <div class="related-game-header action-theme">
+                            <div class="related-game-icon">⚔️</div>
+                            <div class="related-game-category">Action</div>
+                        </div>
+                        <div class="related-game-body">
+                            <h3 class="related-game-title" style="color: white;">Kick the Pirate</h3>
+                            <p class="related-game-description" style="color: rgba(255,255,255,0.9);">Join epic pirate battles and showcase your combat skills.</p>
+                        </div>
+                        <div class="related-game-footer">
+                            <a href="/games/kick-the-pirate.html" class="related-game-btn">
+                                <span class="btn-icon">⚔️</span>
+                                <span class="btn-text">Play Now</span>
+                                <span class="btn-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="footer-brand mb-3">
+                        <div class="brand-icon me-2">🎮</div>
+                        <span class="brand-text h5 mb-0">GameBox Hub</span>
+                    </div>
+                    <p class="footer-description text-muted mb-3">
+                        Providing high-quality free online gaming experiences for players worldwide, no download required - click and play instantly.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <h6 class="footer-title">Game Categories</h6>
+                            <ul class="footer-links">
+                                <li><a href="/games/epic-basketball.html">Sports Games</a></li>
+                                <li><a href="/games/thief-puzzle.html">Puzzle Games</a></li>
+                                <li><a href="/games/ultimate-moto.html">Racing Games</a></li>
+                                <li><a href="/games/kick-the-pirate.html">Action Games</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h6 class="footer-title">About Us</h6>
+                            <ul class="footer-links">
+                                <li><a href="/about.html">About Us</a></li>
+                                <li><a href="mailto:contact@gamebox.games">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="footer-copyright mb-0">
+                        &copy; 2024 GameBox Hub. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <p class="footer-update mb-0">
+                        <small class="text-muted">Last updated: January 1, 2024</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js?v=2024010102"></script>
+    <script src="/assets/js/game-loader.js?v=2024010102"></script>
+
+</body>
+</html> 
