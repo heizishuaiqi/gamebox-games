@@ -20,6 +20,14 @@
         <priority>0.8</priority>
     </url>
     
+    <!-- 游戏分类页面 -->
+    <url>
+        <loc>https://gamebox.games/categories.html</loc>
+        <lastmod>2025-06-16T10:06:23+08:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
     <!-- 游戏页面 - 高优先级 -->
     <url>
         <loc>https://gamebox.games/games/epic-basketball.html</loc>
