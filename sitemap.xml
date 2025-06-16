@@ -28,6 +28,35 @@
         <priority>0.8</priority>
     </url>
     
+    <!-- 分类详情页面 -->
+    <url>
+        <loc>https://gamebox.games/categories/sports.html</loc>
+        <lastmod>2025-06-16T10:06:23+08:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://gamebox.games/categories/puzzle.html</loc>
+        <lastmod>2025-06-16T10:06:23+08:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://gamebox.games/categories/racing.html</loc>
+        <lastmod>2025-06-16T10:06:23+08:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://gamebox.games/categories/action.html</loc>
+        <lastmod>2025-06-16T10:06:23+08:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
     <!-- 游戏页面 - 高优先级 -->
     <url>
         <loc>https://gamebox.games/games/epic-basketball.html</loc>
