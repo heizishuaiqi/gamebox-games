@@ -51,11 +51,11 @@
 }
 
 body {
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-base);
-    color: var(--dark-color);
-    background-color: #ffffff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(180deg, #f8f9ff 0%, #ffffff 50%, #f8f9ff 100%);
+    min-height: 100vh;
     padding-top: 76px; /* 为固定导航栏留出空间 */
     scroll-behavior: smooth;
 }
@@ -195,9 +195,12 @@ img {
 }
 
 .hero-badge .badge {
-    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     font-weight: 600;
-    border: 1px solid rgba(13, 110, 253, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .bg-primary-soft {
@@ -355,29 +358,28 @@ img {
 }
 
 .game-card-inner {
-    background: white;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
+    background: transparent;
 }
 
 .game-card-modern:hover .game-card-inner {
     transform: translateY(-8px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 25px 60px rgba(102, 126, 234, 0.2);
 }
 
 .game-card-header {
     position: relative;
-    padding: 2rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    border-radius: 20px 20px 0 0;
 }
 
 /* 游戏缩略图容器 */
@@ -393,13 +395,13 @@ img {
 
 /* 游戏缩略图样式 */
 .game-thumbnail {
-    width: 120px;
-    height: 90px;
+    width: 160px;
+    height: 120px;
     border-radius: 16px;
     object-fit: cover;
-    border: 3px solid rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.3);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     will-change: transform;
 }
@@ -414,8 +416,8 @@ img {
 
 /* 缩略图加载失败时的备用图标 */
 .game-thumbnail-wrapper .game-icon-wrapper {
-    width: 120px;
-    height: 90px;
+    width: 160px;
+    height: 120px;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -484,18 +486,21 @@ img {
 }
 
 .category-badge {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     color: var(--dark-color);
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    backdrop-filter: blur(10px);
+    padding: 0.35rem 1rem;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .game-card-body {
     padding: 2rem;
     flex-grow: 1;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .game-title {
@@ -2402,24 +2407,52 @@ footer small {
 
 /* 简化版Hero区域样式 */
 .hero-section-simple {
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, 
+        #667eea 0%, 
+        #764ba2 25%, 
+        #f093fb 50%, 
+        #f5576c 75%, 
+        #4facfe 100%);
     border-bottom: 1px solid #e9ecef;
     margin-top: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section-simple::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(102, 126, 234, 0.8) 0%, 
+        rgba(118, 75, 162, 0.8) 25%, 
+        rgba(240, 147, 251, 0.8) 50%, 
+        rgba(245, 87, 108, 0.8) 75%, 
+        rgba(79, 172, 254, 0.8) 100%);
+    z-index: 1;
 }
 
 .hero-content-simple {
+    position: relative;
+    z-index: 2;
     max-width: 800px;
     margin: 0 auto;
 }
 
 .hero-title-simple {
-    color: #2c3e50;
+    color: #ffffff;
     font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-description-simple {
     max-width: 600px;
     margin: 0 auto;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hero-quick-stats {
@@ -2432,21 +2465,48 @@ footer small {
 .quick-stat {
     display: inline-flex;
     align-items: center;
-    padding: 0.5rem 1rem;
-    background: rgba(0, 123, 255, 0.1);
-    color: #007bff;
-    border-radius: 1rem;
+    padding: 0.75rem 1.25rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border-radius: 1.5rem;
     font-weight: 600;
     font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.quick-stat:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* 主要游戏展示区样式 */
 .games-section-main {
-    background: #ffffff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 255, 0.9) 100%);
+    position: relative;
+}
+
+.games-section-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(102, 126, 234, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(240, 147, 251, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(79, 172, 254, 0.02) 0%, transparent 50%);
+    pointer-events: none;
 }
 
 .games-header {
     margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .games-title {
@@ -2463,21 +2523,44 @@ footer small {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
 }
 
 .game-card-main {
-    background: white;
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
     border-radius: 1rem;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     overflow: hidden;
     border: 2px solid transparent;
+    position: relative;
+}
+
+.game-card-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(102, 126, 234, 0.05), 
+        rgba(240, 147, 251, 0.05), 
+        rgba(79, 172, 254, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.game-card-main:hover::before {
+    opacity: 1;
 }
 
 .game-card-main:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-    border-color: rgba(0, 123, 255, 0.2);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+    border-color: rgba(102, 126, 234, 0.3);
 }
 
 /* 当整个卡片hover时，缩略图也放大 */
@@ -2545,7 +2628,7 @@ footer small {
     display: inline-flex;
     align-items: center;
     padding: 1rem 1.5rem;
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f5576c 100%);
     color: white;
     text-decoration: none;
     border-radius: 0.75rem;
@@ -2554,27 +2637,50 @@ footer small {
     transition: all 0.3s ease;
     width: 100%;
     justify-content: center;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.game-play-btn-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.game-play-btn-main:hover::before {
+    left: 100%;
 }
 
 .game-play-btn-main:hover {
-    background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+    background: linear-gradient(135deg, #764ba2 0%, #f5576c 50%, #667eea 100%);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
     color: white;
 }
 
 .game-play-btn-main .btn-icon {
     margin-right: 0.75rem;
     font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
 }
 
 .game-play-btn-main .btn-text {
     margin-right: 0.75rem;
+    position: relative;
+    z-index: 1;
 }
 
 .game-play-btn-main .btn-arrow {
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .game-play-btn-main:hover .btn-arrow {
