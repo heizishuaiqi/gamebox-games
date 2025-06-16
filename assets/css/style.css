@@ -2404,7 +2404,7 @@ footer small {
 .hero-section-simple {
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     border-bottom: 1px solid #e9ecef;
-    margin-top: 76px;
+    margin-top: 0;
 }
 
 .hero-content-simple {
