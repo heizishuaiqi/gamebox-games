@@ -30,7 +30,10 @@
     <meta name="twitter:description" content="Browse our collection of free online games by category.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/images/icons/favicon-16x16.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/favicon.svg">
+    <link rel="shortcut icon" href="/assets/images/icons/favicon.svg" type="image/svg+xml">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -82,44 +85,10 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="/">
-                <div class="brand-icon me-2">🎮</div>
-                <span class="brand-text">GameBox Hub</span>
-            </a>
-            
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link fw-medium" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fw-medium" href="/categories.html" aria-current="page">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-medium" href="/about.html">About</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar-container"></div>
 
     <!-- Breadcrumb -->
-    <section class="breadcrumb-section bg-light py-2">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Categories</li>
-                </ol>
-            </nav>
-        </div>
-    </section>
+    <div id="breadcrumb-container"></div>
 
     <!-- Categories Header -->
     <section class="hero-section-simple" style="margin-top: 0;">
@@ -280,67 +249,28 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer-modern bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="footer-brand mb-3">
-                        <div class="brand-icon me-2">🎮</div>
-                        <span class="brand-text h5 mb-0">GameBox Hub</span>
-                    </div>
-                    <p class="footer-description text-muted mb-3">
-                        Providing high-quality free online gaming experiences for players worldwide, no download required - click and play instantly.
-                    </p>
-                    <div class="footer-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">4+</span>
-                            <span class="stat-label">Quality Games</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Free</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <h6 class="footer-title">Game Categories</h6>
-                            <ul class="footer-links">
-                                <li><a href="/games/epic-basketball.html">Sports Games</a></li>
-                                <li><a href="/games/thief-puzzle.html">Puzzle Games</a></li>
-                                <li><a href="/games/ultimate-moto.html">Racing Games</a></li>
-                                <li><a href="/games/kick-the-pirate.html">Action Games</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <h6 class="footer-title">About Us</h6>
-                            <ul class="footer-links">
-                                <li><a href="/about.html">About Us</a></li>
-                                <li><a href="mailto:contact@gamebox.games">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="footer-divider my-4">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <p class="footer-copyright mb-0">
-                        &copy; 2025 GameBox Hub. All rights reserved.
-                    </p>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <p class="footer-update mb-0">
-                        <small class="text-muted">Last updated: June 16, 2025</small>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/components.js?v=2024010106"></script>
     <script src="/assets/js/main.js?v=2024010104"></script>
+    <script>
+        // 初始化分类页面组件
+        document.addEventListener('DOMContentLoaded', function() {
+            // 渲染导航栏
+            document.getElementById('navbar-container').innerHTML = GameBoxComponents.renderNavbar('categories');
+            
+            // 渲染面包屑导航
+            const breadcrumbs = [
+                { name: 'Home', url: '/' },
+                { name: 'Categories', url: '/categories.html' }
+            ];
+            document.getElementById('breadcrumb-container').innerHTML = GameBoxComponents.renderBreadcrumb(breadcrumbs);
+            
+            // 渲染Footer
+            document.getElementById('footer-container').innerHTML = GameBoxComponents.renderFooter();
+        });
+    </script>
 </body>
 </html> 

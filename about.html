@@ -27,58 +27,64 @@
     <meta property="og:description" content="Learn about GameBox Hub's mission and vision. We are dedicated to providing players with the highest quality free online gaming experience.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gamebox.games/about.html">
+    <meta property="og:image" content="https://gamebox.games/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="About GameBox Hub - Free Online Games Platform">
+    <meta property="og:site_name" content="GameBox Hub">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us - GameBox Hub">
+    <meta name="twitter:description" content="Learn about GameBox Hub's mission to provide the best free online gaming experience.">
+    <meta name="twitter:image" content="https://gamebox.games/assets/images/og-image.jpg">
+    <meta name="twitter:image:alt" content="About GameBox Hub">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/images/icons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
-    <link rel="apple-touch-icon" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/assets/images/icons/favicon-16x16.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/favicon.svg">
+    <link rel="shortcut icon" href="/assets/images/icons/favicon.svg" type="image/svg+xml">
     
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/style.css?v=2024010101" rel="stylesheet">
     <link href="/assets/css/responsive.css?v=2024010101" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About GameBox Hub",
+        "description": "Learn about GameBox Hub's mission to provide the best free online gaming experience with basketball, puzzle, racing and action games.",
+        "url": "https://gamebox.games/about.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "GameBox Hub",
+            "url": "https://gamebox.games",
+            "description": "Free online gaming platform featuring 4 amazing games",
+            "foundingDate": "2024",
+            "sameAs": [
+                "https://gamebox.games"
+            ],
+            "offers": {
+                "@type": "Offer",
+                "description": "Free online games including Epic Basketball, Thief Puzzle, Ultimate Moto, and Kick the Pirate",
+                "price": "0",
+                "priceCurrency": "USD"
+            }
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                            <img src="/assets/images/logo/logo.svg" alt="GameBox Hub Logo" height="40" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-            <span style="display: none; font-weight: bold; color: #007bff;">🎮 GameBox Hub</span>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/categories.html">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/about.html" aria-current="page">About</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar-container"></div>
 
     <!-- Breadcrumb Navigation -->
-    <section class="breadcrumb-section bg-light py-3">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
-                </ol>
-            </nav>
-        </div>
-    </section>
+    <div id="breadcrumb-container"></div>
 
     <!-- Main Content -->
     <main class="py-5">
@@ -151,16 +157,16 @@
                         <p>Currently we offer 4 carefully selected games, covering different genres to meet various players' needs:</p>
                         <ul class="list-unstyled">
                             <li class="mb-2">
-                                <strong>🏀 Epic Basketball</strong> - Epic basketball game, experience the joy of real shooting
+                                <strong>🏀 <a href="/games/epic-basketball.html" class="text-primary text-decoration-none">Epic Basketball</a></strong> - Epic basketball game, experience the joy of real shooting
                             </li>
                             <li class="mb-2">
-                                <strong>🧩 Thief Puzzle</strong> - Thief puzzle game, challenge your wisdom and logic
+                                <strong>🧩 <a href="/games/thief-puzzle.html" class="text-primary text-decoration-none">Thief Puzzle</a></strong> - Thief puzzle game, challenge your wisdom and logic
                             </li>
                             <li class="mb-2">
-                                <strong>🏎️ Ultimate Moto</strong> - Ultimate motorcycle game, feel the thrill of high-speed driving
+                                <strong>🏎️ <a href="/games/ultimate-moto.html" class="text-primary text-decoration-none">Ultimate Moto</a></strong> - Ultimate motorcycle game, feel the thrill of high-speed driving
                             </li>
                             <li class="mb-2">
-                                <strong>⚔️ Kick the Pirate</strong> - Kick the pirate action game, experience intense combat
+                                <strong>⚔️ <a href="/games/kick-the-pirate.html" class="text-primary text-decoration-none">Kick the Pirate</a></strong> - Kick the pirate action game, experience intense combat
                             </li>
                         </ul>
                     </section>
@@ -276,8 +282,29 @@
         </div>
     </footer>
 
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/components.js?v=2024010106"></script>
     <script src="/assets/js/main.js?v=2024010101"></script>
+    <script>
+        // 初始化关于页面组件
+        document.addEventListener('DOMContentLoaded', function() {
+            // 渲染导航栏
+            document.getElementById('navbar-container').innerHTML = GameBoxComponents.renderNavbar('about');
+            
+            // 渲染面包屑导航
+            const breadcrumbs = [
+                { name: 'Home', url: '/' },
+                { name: 'About Us', url: '/about.html' }
+            ];
+            document.getElementById('breadcrumb-container').innerHTML = GameBoxComponents.renderBreadcrumb(breadcrumbs);
+            
+            // 渲染Footer
+            document.getElementById('footer-container').innerHTML = GameBoxComponents.renderFooter();
+        });
+    </script>
 </body>
 </html> 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad16" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007bff"/>
+      <stop offset="100%" style="stop-color:#0056b3"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="16" height="16" rx="3" fill="url(#grad16)"/>
+  
+  <!-- 简化游戏手柄 -->
+  <g transform="translate(8, 8)">
+    <!-- 手柄主体 -->
+    <rect x="-4.5" y="-1.5" width="9" height="3" rx="1.5" fill="white"/>
+    
+    <!-- 左右握把 -->
+    <ellipse cx="-4.5" cy="0.5" rx="1.5" ry="2.5" fill="white"/>
+    <ellipse cx="4.5" cy="0.5" rx="1.5" ry="2.5" fill="white"/>
+    
+    <!-- 左侧摇杆 -->
+    <circle cx="-2.5" cy="0" r="0.8" fill="#007bff"/>
+    
+    <!-- 右侧彩色按钮（简化为两个） -->
+    <circle cx="1.5" cy="-0.5" r="0.5" fill="#28a745"/> <!-- 绿色 -->
+    <circle cx="2.5" cy="0.5" r="0.5" fill="#dc3545"/>  <!-- 红色 -->
+  </g>
+</svg> 

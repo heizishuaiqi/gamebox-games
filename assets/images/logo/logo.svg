@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 主要渐变 -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007bff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0056b3;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 游戏主题渐变 -->
+    <linearGradient id="basketballGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff4500;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="puzzleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20c997;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="racingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#17a2b8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20c997;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="actionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6f42c1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e83e8c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 外层圆形背景 -->
+  <circle cx="60" cy="60" r="58" fill="white" stroke="#f8f9fa" stroke-width="2"/>
+  
+  <!-- 4个游戏模块 -->
+  <!-- 左上: 篮球游戏 -->
+  <rect x="25" y="25" width="30" height="30" rx="6" fill="url(#basketballGradient)"/>
+  
+  <!-- 右上: 解谜游戏 -->
+  <rect x="65" y="25" width="30" height="30" rx="6" fill="url(#puzzleGradient)"/>
+  
+  <!-- 左下: 赛车游戏 -->
+  <rect x="25" y="65" width="30" height="30" rx="6" fill="url(#racingGradient)"/>
+  
+  <!-- 右下: 动作游戏 -->
+  <rect x="65" y="65" width="30" height="30" rx="6" fill="url(#actionGradient)"/>
+  
+  <!-- 中心Hub连接器 -->
+  <circle cx="60" cy="60" r="12" fill="white" stroke="url(#primaryGradient)" stroke-width="3"/>
+  <circle cx="60" cy="60" r="6" fill="url(#primaryGradient)"/>
+  
+  <!-- 游戏类型图标 -->
+  <!-- 篮球图标 -->
+  <g transform="translate(40, 40)">
+    <circle cx="0" cy="0" r="6" fill="white" opacity="0.9"/>
+    <circle cx="0" cy="0" r="4" fill="none" stroke="#ff4500" stroke-width="1"/>
+    <path d="M -3 0 Q 0 -3 3 0 Q 0 3 -3 0" fill="none" stroke="#ff4500" stroke-width="0.8"/>
+    <path d="M 0 -3 Q 3 0 0 3 Q -3 0 0 -3" fill="none" stroke="#ff4500" stroke-width="0.8"/>
+  </g>
+  
+  <!-- 解谜拼图图标 -->
+  <g transform="translate(80, 40)">
+    <rect x="-6" y="-6" width="12" height="12" rx="1" fill="white" opacity="0.9"/>
+    <!-- 拼图凸出部分 -->
+    <path d="M -6 -2 Q -8 -2 -8 0 Q -8 2 -6 2 L 6 2 Q 8 2 8 0 Q 8 -2 6 -2 L -6 -2 Z" fill="#20c997" stroke="none"/>
+    <circle cx="0" cy="0" r="2" fill="none" stroke="#28a745" stroke-width="0.8"/>
+  </g>
+  
+  <!-- 赛车图标 -->
+  <g transform="translate(40, 80)">
+    <ellipse cx="0" cy="0" rx="8" ry="4" fill="white" opacity="0.9"/>
+    <rect x="-6" y="-1" width="12" height="2" rx="1" fill="#17a2b8"/>
+    <circle cx="-4" cy="2" r="1.5" fill="#17a2b8"/>
+    <circle cx="4" cy="2" r="1.5" fill="#17a2b8"/>
+    <!-- 车身装饰 -->
+    <rect x="-3" y="-2" width="6" height="1" rx="0.5" fill="#20c997"/>
+  </g>
+  
+  <!-- 动作/武器图标 -->
+  <g transform="translate(80, 80)">
+    <rect x="-6" y="-6" width="12" height="12" rx="2" fill="white" opacity="0.9"/>
+    <!-- 剑形状 -->
+    <rect x="-1" y="-5" width="2" height="8" fill="#6f42c1"/>
+    <rect x="-3" y="-2" width="6" height="1" fill="#6f42c1"/>
+    <circle cx="0" cy="4" r="1.5" fill="#e83e8c"/>
+  </g>
+  
+  <!-- Hub连接线 -->
+  <line x1="48" y1="48" x2="55" y2="55" stroke="url(#primaryGradient)" stroke-width="2" opacity="0.6"/>
+  <line x1="72" y1="48" x2="65" y2="55" stroke="url(#primaryGradient)" stroke-width="2" opacity="0.6"/>
+  <line x1="48" y1="72" x2="55" y2="65" stroke="url(#primaryGradient)" stroke-width="2" opacity="0.6"/>
+  <line x1="72" y1="72" x2="65" y2="65" stroke="url(#primaryGradient)" stroke-width="2" opacity="0.6"/>
+</svg> 

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="300" height="100" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="10" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#343a40">
+    GameBox Hub Favicon 预览 - 与Logo设计一致
+  </text>
+  
+  <!-- 32x32 版本 -->
+  <g transform="translate(20, 35)">
+    <text x="0" y="-5" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">32x32px</text>
+    
+    <!-- favicon内容 -->
+    <rect width="32" height="32" rx="6" fill="url(#faviconGrad)"/>
+    <g transform="translate(16, 16)">
+      <rect x="-8" y="-2.5" width="16" height="5" rx="2.5" fill="white"/>
+      <ellipse cx="-8" cy="1" rx="2.5" ry="4" fill="white"/>
+      <ellipse cx="8" cy="1" rx="2.5" ry="4" fill="white"/>
+      <circle cx="-5" cy="0" r="1.8" fill="none" stroke="#007bff" stroke-width="0.8"/>
+      <circle cx="-5" cy="0" r="0.8" fill="#007bff"/>
+      <circle cx="3" cy="-1.5" r="0.8" fill="#28a745"/>
+      <circle cx="5.5" cy="0" r="0.8" fill="#007bff"/>
+      <circle cx="3" cy="1.5" r="0.8" fill="#dc3545"/>
+      <circle cx="0.5" cy="0" r="0.8" fill="#ffc107"/>
+    </g>
+  </g>
+  
+  <!-- 16x16 版本 -->
+  <g transform="translate(80, 35)">
+    <text x="0" y="-5" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">16x16px</text>
+    
+    <rect width="16" height="16" rx="3" fill="url(#faviconGrad)"/>
+    <g transform="translate(8, 8)">
+      <rect x="-4.5" y="-1.5" width="9" height="3" rx="1.5" fill="white"/>
+      <ellipse cx="-4.5" cy="0.5" rx="1.5" ry="2.5" fill="white"/>
+      <ellipse cx="4.5" cy="0.5" rx="1.5" ry="2.5" fill="white"/>
+      <circle cx="-2.5" cy="0" r="0.8" fill="#007bff"/>
+      <circle cx="1.5" cy="-0.5" r="0.5" fill="#28a745"/>
+      <circle cx="2.5" cy="0.5" r="0.5" fill="#dc3545"/>
+    </g>
+  </g>
+  
+  <!-- 与logo对比 -->
+  <g transform="translate(130, 35)">
+    <text x="0" y="-5" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">Logo设计特征</text>
+    
+    <!-- 简化的logo元素 -->
+    <rect x="0" y="0" width="32" height="32" rx="6" fill="#f8f9fa" stroke="#dee2e6"/>
+    <text x="4" y="8" font-family="Arial, sans-serif" font-size="6" fill="#6c757d">✓ 游戏手柄形状</text>
+    <text x="4" y="14" font-family="Arial, sans-serif" font-size="6" fill="#6c757d">✓ 左右握把</text>
+    <text x="4" y="20" font-family="Arial, sans-serif" font-size="6" fill="#6c757d">✓ 摇杆和按钮</text>
+    <text x="4" y="26" font-family="Arial, sans-serif" font-size="6" fill="#6c757d">✓ ABXY彩色按钮</text>
+  </g>
+  
+  <!-- 浏览器标签页模拟 -->
+  <g transform="translate(200, 35)">
+    <text x="0" y="-5" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">浏览器标签页效果</text>
+    
+    <!-- 标签页背景 -->
+    <rect x="0" y="0" width="80" height="20" rx="4" fill="#ffffff" stroke="#dee2e6"/>
+    
+    <!-- favicon位置 -->
+    <g transform="translate(6, 6)">
+      <rect width="8" height="8" rx="1.5" fill="url(#faviconGrad)"/>
+      <g transform="translate(4, 4) scale(0.25)">
+        <rect x="-4.5" y="-1.5" width="9" height="3" rx="1.5" fill="white"/>
+        <ellipse cx="-4.5" cy="0.5" rx="1.5" ry="2.5" fill="white"/>
+        <ellipse cx="4.5" cy="0.5" rx="1.5" ry="2.5" fill="white"/>
+        <circle cx="-2.5" cy="0" r="0.8" fill="#007bff"/>
+        <circle cx="2.5" cy="0" r="0.8" fill="#dc3545"/>
+      </g>
+    </g>
+    
+    <!-- 标签页文字 -->
+    <text x="20" y="12" font-family="Arial, sans-serif" font-size="8" fill="#495057">GameBox Hub</text>
+  </g>
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="faviconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007bff"/>
+      <stop offset="100%" style="stop-color:#0056b3"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 说明文字 -->
+  <text x="10" y="85" font-family="Arial, sans-serif" font-size="10" fill="#6c757d">
+    新favicon设计完全与logo保持一致：游戏手柄造型、彩色ABXY按钮、握把细节
+  </text>
+</svg> 

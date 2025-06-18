@@ -1,0 +1,134 @@
+/**
+ * 公共组件样式库 - GameBox Hub
+ * 为公共组件提供统一的样式支持
+ */
+
+/* ==========================================================================
+   公共组件库样式
+   ========================================================================== */
+
+/* 游戏图标大型显示 */
+.game-icon-large {
+    font-size: 4rem;
+    opacity: 0.3;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.5; }
+}
+
+/* 相关游戏推荐卡片样式 */
+.related-game-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.related-game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.related-game-icon {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.related-game-content {
+    padding: 1.5rem;
+}
+
+.related-game-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.related-game-description {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.related-game-footer {
+    padding: 0 1.5rem 1.5rem;
+}
+
+/* Footer 链接样式 */
+.footer-link {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-title {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-divider {
+    border-color: #495057;
+    opacity: 0.3;
+}
+
+.footer-copyright,
+.footer-update {
+    color: #adb5bd;
+    font-size: 0.875rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .game-icon-large {
+        font-size: 3rem;
+    }
+    
+    .related-game-icon {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+    
+    .related-game-content {
+        padding: 1rem;
+    }
+    
+    .related-game-footer {
+        padding: 0 1rem 1rem;
+    }
+}
+
+/* 组件加载动画 */
+.component-loading {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+} 
